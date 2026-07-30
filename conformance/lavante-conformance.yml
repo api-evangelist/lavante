@@ -1,0 +1,53 @@
+generated: '2026-07-19'
+method: searched
+source: https://web.archive.org/web/2016/http://www.lavante.com/ (archived Lavante site nav + homepage)
+
+scope: >-
+  Conformance assertions for Lavante. The company published no API, so no protocol/interface standards
+  (oauth2, oidc, odata, json:api, rfc9457, fapi, scim, pagination, idempotency) can be asserted — there
+  was never a contract to assert them against. The one genuine published claim is an organizational
+  audit-attestation program (SOC), which the archived site surfaced as a top-level nav item and a
+  homepage callout.
+
+current: false
+current_note: >-
+  These assertions are HISTORICAL. The Lavante site was retired in 2023 and the claims are only
+  verifiable via the Internet Archive. No Compliance pointer is emitted in apis.yml because the
+  program is not currently published by a live Lavante entity — see conformance of the acquirer,
+  PRGX Global, if a current attestation is needed.
+
+standards:
+- id: soc
+  conforms: true
+  scope: organization
+  evidence: >-
+    Archived lavante.com carried a "SOC Compliance" top-level nav item under Company, and a homepage
+    callout reading "Peace of Mind: Our Customers and Suppliers Understand the Value of SOC
+    Compliance". Specific SOC type (SOC 1 vs SOC 2) and report period were not stated on the pages
+    captured, so neither is asserted here.
+  verified_via: https://web.archive.org/web/2016/http://www.lavante.com/
+  current: false
+- id: ofac
+  conforms: true
+  scope: product-capability
+  evidence: >-
+    Vendor File Cleanse performed recurring OFAC screening of vendor master records, per the archived
+    product description and a named customer testimonial ("do regular OFAC screening").
+  verified_via: https://web.archive.org/web/2016/http://www.lavante.com/
+  current: false
+
+- id: oauth2
+  conforms: false
+  evidence: No API or authorization surface was ever published.
+- id: oidc
+  conforms: false
+  evidence: No API or authorization surface was ever published.
+- id: rfc9457
+  conforms: false
+  evidence: No API or error contract was ever published.
+- id: idempotency
+  conforms: false
+  evidence: No API or write contract was ever published.
+- id: pagination
+  conforms: false
+  evidence: No API or collection contract was ever published.

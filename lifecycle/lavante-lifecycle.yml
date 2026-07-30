@@ -1,0 +1,77 @@
+generated: '2026-07-19'
+method: searched
+source: https://web.archive.org/web/2016/http://www.lavante.com/ + http://web.archive.org/cdx/search/cdx?url=lavante.com
+  + https://www.prgx.com/
+
+company: Lavante
+status: acquired
+api_surface: none
+
+summary: >-
+  Lavante operated as an independent SaaS supplier information management and profit-recovery vendor,
+  was acquired by PRGX Global, ran on for several years as a PRGX-owned brand and site, and was then
+  fully retired into a domain redirect. The supplier-facing capability survives inside PRGX as
+  Supplier Connect. No public API, developer portal, versioning policy, deprecation policy, SLA or
+  status page was ever published under the lavante.com domain.
+
+events:
+- date: '2016-11-01'
+  event: acquisition-announced
+  detail: >-
+    Lavante homepage carries the banner "BREAKING NEWS: PRGX Global Completes Acquisition of Lavante".
+    Earliest archived capture bearing the banner is timestamped 2016-11-01.
+  evidence: https://web.archive.org/web/2016/http://www.lavante.com/
+- date: '2022-03-14'
+  event: standalone-site-last-seen-live
+  detail: >-
+    lavante.com still served a Lavante-branded site (Lavante SIM / Lavante Recovery / Lavante SIM
+    Cleanse) co-branded "DEDUCTION MANAGEMENT BY PRGX". Last Wayback capture returning HTTP 200 for
+    the site is 2022-05-18.
+  evidence: https://web.archive.org/web/20220314184607/http://www.lavante.com/
+- date: '2023-07-24'
+  event: domain-retired-to-redirect
+  detail: >-
+    First archived capture showing lavante.com returning HTTP 302 instead of a site. Every capture
+    since (2024-01, 2024-04, 2024-08, 2024-10, 2025-11, 2026-02) is a 302.
+  evidence: http://web.archive.org/cdx/search/cdx?url=lavante.com&fl=timestamp,statuscode
+- date: '2026-07-19'
+  event: redirect-verified
+  detail: >-
+    https://www.lavante.com/ returns HTTP 302 to https://www.prgx.com/. All /.well-known/* paths
+    resolve to the same redirect (soft 404, HTML body).
+  evidence: probed
+
+succession:
+  acquired_by: PRGX Global
+  acquirer_website: https://www.prgx.com/
+  successor_product: PRGX Supplier Connect
+  successor_product_url: https://www.prgx.com/solutions/supplier-connect/
+  successor_product_note: >-
+    Vendor management / supplier portal for invoice dispute resolution; self-service supplier portal,
+    payment-status visibility, document submission, and integrations with SAP, Oracle and Coupa. PRGX
+    does not document a public API for it.
+
+products:
+- name: Lavante SIM
+  description: Supplier information management — vendor onboarding, data quality, supplier self-service.
+  status: discontinued-as-brand
+- name: Lavante Recovery
+  description: Profit recovery / recovery audit for accounts payable.
+  status: discontinued-as-brand
+- name: Vendor File Cleanse
+  description: >-
+    Vendor master file cleansing — duplicate identification, address and TIN verification, recurring
+    OFAC screening. Later renamed "Lavante SIM Cleanse".
+  status: discontinued-as-brand
+- name: Lavante Connect
+  description: Patented underlying platform framework powering the Lavante solution suite.
+  status: discontinued-as-brand
+
+# Scored lifecycle sub-signals — recorded as absent, not fabricated.
+versioning_policy: null
+deprecation_policy: null
+sunset_header: false
+sla: null
+status_page: null
+notes: >-
+  No StatusPage or Deprecation pointer is emitted in apis.yml because neither was ever published.

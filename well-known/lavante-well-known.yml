@@ -1,0 +1,65 @@
+generated: '2026-07-19'
+method: searched
+source: live HTTP probes of https://www.lavante.com and https://www.prgx.com
+result: none
+
+note: >-
+  No .well-known documents are published on either the historical Lavante domain or its successor.
+  Every /.well-known/* path on www.lavante.com returns HTTP 302 to https://www.prgx.com/ and then
+  serves the PRGX homepage HTML — a soft 404, not a discovery document. The same paths on
+  www.prgx.com return a hard 404. No raw files were saved because none exist.
+
+hosts:
+- host: https://www.lavante.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 302
+    redirect: https://www.prgx.com/
+    result: soft-404 (HTML homepage)
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 302
+    redirect: https://www.prgx.com/
+    result: soft-404 (HTML homepage)
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 302
+    redirect: https://www.prgx.com/
+    result: soft-404 (HTML homepage)
+    file: null
+  - path: /.well-known/api-catalog
+    status: 302
+    redirect: https://www.prgx.com/
+    result: soft-404 (HTML homepage)
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 302
+    redirect: https://www.prgx.com/
+    result: soft-404 (HTML homepage)
+    file: null
+- host: https://www.prgx.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+
+other:
+- path: /llms.txt
+  host: https://www.prgx.com
+  status: 200
+  content_type: text/plain
+  bytes: 4631
+  file: ../llms/lavante-llms.txt
+  note: Real llms.txt (Yoast SEO generated) published by the successor entity PRGX.
