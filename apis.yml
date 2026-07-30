@@ -1,21 +1,53 @@
 aid: lavante
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/lavante.png
 name: Lavante
-description: 'Lavante is a company surfaced as a portfolio company of sapphire-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: saas. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Lavante was a SaaS supplier information management (SIM) and profit-recovery company built
+  on its patented Lavante Connect platform. Its products — Lavante SIM, Lavante Recovery and Vendor File
+  Cleanse — cleansed vendor master files, verified addresses and TINs, ran OFAC screening, onboarded
+  suppliers onto the Lavante Supplier Network, and drove dispute resolution and recovery audit across the
+  procure-to-pay (P2P) ecosystem for Fortune 1000 clients in hospitality, retail, entertainment,
+  manufacturing and medical. Lavante was acquired by PRGX Global and its standalone site was retired;
+  www.lavante.com now 302-redirects to www.prgx.com, where the supplier-facing capability lives on as PRGX
+  Supplier Connect. Lavante never published a public API, developer portal, SDKs or API documentation —
+  the Internet Archive holds no api/developer/docs/swagger paths for the domain.'
 url: https://raw.githubusercontent.com/api-evangelist/lavante/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - sapphire-ventures
+- pointguard-ventures
+- ata-ventures
+x-status: acquired
+x-acquired-by: prgx-global
+x-successor-product: PRGX Supplier Connect
+x-historical-website: http://www.lavante.com/
+x-api-surface: none
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: acquired-no-api-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-- Saas
+- SaaS
+- Supplier Information Management
+- Procure To Pay
+- Accounts Payable
+- Spend Management
+- Recovery Audit
+- Vendor Management
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,4 +56,29 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://www.lavante.com/
+  url: https://www.prgx.com/
+- type: Blog
+  url: https://www.prgx.com/blog/
+- type: Support
+  url: https://www.prgx.com/contact/
+- type: PrivacyPolicy
+  url: https://www.prgx.com/privacy-statement/
+- type: TermsOfService
+  url: https://www.prgx.com/terms-conditions/
+- type: LLMsTxt
+  url: llms/lavante-llms.txt
+- type: Lifecycle
+  url: lifecycle/lavante-lifecycle.yml
+- type: Conformance
+  url: conformance/lavante-conformance.yml
+- type: WellKnown
+  url: well-known/lavante-well-known.yml
+- type: DomainSecurity
+  url: security/lavante-domain-security.yml
+- type: Archive
+  url: https://web.archive.org/web/2016/http://www.lavante.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
