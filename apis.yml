@@ -33,6 +33,9 @@ description: 'Lavante was a SaaS supplier information management (SIM) and profi
   Supplier Connect. Lavante never published a public API, developer portal, SDKs or API documentation —
   the Internet Archive holds no api/developer/docs/swagger paths for the domain.'
 url: https://raw.githubusercontent.com/api-evangelist/lavante/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "Lavante never published a public API, developer portal, SDKs or API documentation — the Internet Archive holds no api/developer/docs/swagger paths for the domain."
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
