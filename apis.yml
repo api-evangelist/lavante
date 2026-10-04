@@ -62,6 +62,7 @@ tags:
 - Recovery Audit
 - Vendor Management
 - Acquired
+- Procurement
 tags_raw:
 - Company
 - SaaS
@@ -72,6 +73,7 @@ tags_raw:
 - Recovery Audit
 - Vendor Management
 - Acquired
+- Procurement
 apis: []
 maintainers:
 - FN: Kin Lane
