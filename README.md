@@ -64,34 +64,48 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Lavante was a SaaS **supplier information management (SIM)** and **profit-recovery** company built on its
-patented **Lavante Connect** platform. Its products — Lavante SIM, Lavante Recovery and Vendor File Cleanse
-— cleansed vendor master files, verified addresses and TINs, ran OFAC screening, onboarded suppliers onto
-the Lavante Supplier Network, and drove dispute resolution and recovery audit across the procure-to-pay
-(P2P) ecosystem for Fortune 1000 clients.
+> **Acquired or rebranded.** This company was acquired, merged or renamed. Its API, if it still exists, is offered under another name. This profile is kept as a historical record and is not maintained or rated.
 
-## Status: acquired — no API surface
+Lavante was a SaaS supplier information management (SIM) and profit-recovery company built on its patented Lavante Connect platform. Its products — Lavante SIM, Lavante Recovery and Vendor File Cleanse — cleansed vendor master files, verified addresses and TINs, ran OFAC screening, onboarded suppliers onto the Lavante Supplier Network, and drove dispute resolution and recovery audit across the procure-to-pay (P2P) ecosystem for Fortune 1000 clients in hospitality, retail, entertainment, manufacturing and medical. Lavante was acquired by PRGX Global and its standalone site was retired; www.lavante.com now 302-redirects to www.prgx.com, where the supplier-facing capability lives on as PRGX Supplier Connect. Lavante never published a public API, developer portal, SDKs or API documentation — the Internet Archive holds no api/developer/docs/swagger paths for the domain.
 
-Lavante was **acquired by PRGX Global** (banner "PRGX Global Completes Acquisition of Lavante" appears on
-the site from November 2016). The Lavante-branded site ran on as a PRGX property until mid-2022, then was
-retired: `www.lavante.com` has returned an HTTP **302 to `www.prgx.com`** since 2023. The supplier-facing
-capability lives on as **[PRGX Supplier Connect](https://www.prgx.com/solutions/supplier-connect/)**.
+**Areas:** Company · Software-as-a-Service · Supplier Information Management · Procure-to-Pay · Accounts Payable · Spend Management · Recovery Audit · Vendor Management · Acquired · Procurement
 
-**Lavante never published a public API, developer portal, SDKs, or API documentation.** A sweep of the
-Internet Archive's full URL index for `lavante.com` returned no `api`/`developer`/`docs`/`swagger`/`oauth`/
-`webhook` paths. Package registries (npm, PyPI, RubyGems, NuGet, Packagist, crates.io) hold no first-party
-Lavante libraries. Accordingly the spec-bearing artifacts — OpenAPI, overlays, errors, data model, skills,
-scopes, conventions, MCP, sandbox, CLI, components, AsyncAPI, gRPC — are **not applicable** and were
-deliberately not generated.
+## Lavante on APIs.io (historical record)
 
-## Artifacts
+Everything profiled for Lavante is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/lavante/](https://apis.io/providers/lavante/)** — or go straight to one of the APIs or properties below.
 
-| Artifact | File | Method |
-|---|---|---|
-| Lifecycle (acquisition + domain retirement) | `lifecycle/lavante-lifecycle.yml` | searched |
-| Conformance (historical SOC / OFAC claims) | `conformance/lavante-conformance.yml` | searched |
-| Well-Known index (all absent) | `well-known/lavante-well-known.yml` | searched |
-| llms.txt (successor entity, PRGX) | `llms/lavante-llms.txt` | searched |
-| Domain security | `security/lavante-domain-security.yml` | probed |
+### Published properties
 
-Investors: **Sapphire Ventures**, **PointGuard Ventures**, **ATA Ventures**.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Lavante Domain Security](https://apis.io/security/lavante/lavante-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.prgx.com/)
+- [Support](https://www.prgx.com/contact/)
+- [Blog](https://www.prgx.com/blog/)
+- [Terms of service](https://www.prgx.com/terms-conditions/)
+- [Privacy policy](https://www.prgx.com/privacy-statement/)
+
+## API Evangelist rating
+
+**Not rated** — this company is recorded as acquired or rebranded, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Lavante: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/lavante/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
